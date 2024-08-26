@@ -21,21 +21,21 @@
 }
 
 .login-form {
-    background-color: rgba(71, 57, 57, 0.9); /* Semi-transparent background for the form */
+    background-color: rgba(71, 57, 57, 0.9);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    width: 400px; /* Increased width for the form */
-    z-index: 2; /* Ensure form is above the overlay */
+    width: 400px;
+    z-index: 2;
     position: relative;
-    font-family: Arial, sans-serif; /* Change font for a modern look */
+    font-family: Arial, sans-serif;
 }
 
 .login-form h2 {
     text-align: center;
     margin-bottom: 30px;
     color: #fffafa;
-    font-size: 24px; /* Increased font size */
+    font-size: 24px;
 }
 
 .form-group {
@@ -45,7 +45,7 @@
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    font-size: 14px; /* Increase label font size */
+    font-size: 14px;
     color: #fffafa;
 }
 
@@ -54,7 +54,7 @@
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    font-size: 16px; /* Increase input font size */
+    font-size: 16px;
 }
 
 button {
@@ -65,10 +65,64 @@ button {
     background-color: #4CAF50;
     color: white;
     cursor: pointer;
-    font-size: 18px; /* Increase button font size */
-    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #45a049;
+}
+
+.signup-button {
+    background-color: #FFFF00;
+    color: black;
+    float: right;
+    margin-left: 10px;margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #808000;
+}
+
+.forgot-password {
+    color: #3498db;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #2980b9;
+}
+
+/* Styles for Forgot Password Dialog */
+#forgot-password-dialog {
+    z-index: 999; /* Ensure dialog appears above other elements */
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Additional styles for the email input and send button */
+#forgot-password-dialog input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#forgot-password-dialog button {
+    width: 30%;
+    padding: 10px 20px;margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#forgot-password-dialog button:hover {
+    background-color: #2980b9;
 }
