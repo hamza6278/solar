@@ -157,7 +157,7 @@ function MainPage() {
       </section>
 
       <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 Infinite Synergy. All rights reserved.</p>
       </footer>
     </div>
   );
